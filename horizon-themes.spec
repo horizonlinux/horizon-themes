@@ -29,11 +29,7 @@ install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_RO
 
 %files
 %{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/*
-%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/*
-%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts/*
 %{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/*
-%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/*
-%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts/*
 
 %changelog
 * Thu Jan 29 2026 Marcel Mrówka <micro.mail88@gmail.com>
