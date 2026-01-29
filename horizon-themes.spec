@@ -5,7 +5,7 @@ Summary:    Horizon themes
 License:    GPLv3+
 
 URL:        https://github.com/horizonlinux/horizon-themes
-Source0:    https://github.com/horizonlinux/horizon-themes
+Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.0.tar.gz
 
 %description
 Horizon themes
