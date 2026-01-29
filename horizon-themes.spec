@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:       horizon-themes
 Version:    1.0
 Release:    1%{?dist}
@@ -6,6 +8,8 @@ License:    GPLv3+
 
 URL:        https://github.com/horizonlinux/horizon-themes
 Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.0.tar.gz
+
+Provides:   plasma-lookandfeel-fedora = 9999999.9-%{release}
 
 %description
 Horizon themes
