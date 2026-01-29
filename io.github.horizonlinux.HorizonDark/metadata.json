@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "micro.mail88@gmail.com",
+                "Name": "Marcel Mrówka"
+            }
+        ],
+        "Description": "Default Horizon dark theme",
+        "Id": "io.github.horizonlinux.HorizonDark",
+        "License": "GPLv3+",
+        "Name": "Horizon Dark",
+        "Website": "horizonlinux.github.io"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;",
+    "X-Plasma-APIVersion": "2",
+    "X-Plasma-MainScript": "default"
+}
