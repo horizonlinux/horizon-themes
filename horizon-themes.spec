@@ -9,8 +9,6 @@ License:    GPLv3+
 URL:        https://github.com/horizonlinux/horizon-themes
 Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.0.tar.gz
 
-Provides:   plasma-lookandfeel-fedora = 6.5.4-1%{?dist}
-
 %description
 Horizon themes
 
