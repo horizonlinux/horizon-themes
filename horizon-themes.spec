@@ -29,10 +29,17 @@ install -p -m 644 io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.pl
 install -p -m 644 io.github.horizonlinux.HorizonDark/contents/defaults $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/defaults
 install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/metadata.json
 
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
+install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
+
 %files
 %{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/*
 %{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/*
+%{_datadir}/glib-2.0/schemas/*.override
 
 %changelog
+* Fri Jan 30 2026 Marcel Mrówka <micro.mail88@gmail.com>
+- Create GTK theme override
+
 * Thu Jan 29 2026 Marcel Mrówka <micro.mail88@gmail.com>
 - package created
