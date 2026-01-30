@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:       horizon-themes
-Version:    1.0
-Release:    2%{?dist}
+Version:    1.1
+Release:    1%{?dist}
 Summary:    Horizon themes
 License:    GPLv3+
 
