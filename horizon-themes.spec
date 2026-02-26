@@ -24,12 +24,12 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews
 
 install -p -m 644 io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js
-install -p -m 644 io.github.horizonlinux.HorizonLight/contents/previews/preview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/preview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonLight/contents/previews/preview.png $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/preview.png
 install -p -m 644 io.github.horizonlinux.HorizonLight/contents/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/fullscreenpreview.jpg
 install -p -m 644 io.github.horizonlinux.HorizonLight/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/metadata.json
 
 install -p -m 644 io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js
-install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/preview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/preview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/preview.png $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/preview.png
 install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews/fullscreenpreview.jpg
 install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/metadata.json
 
