@@ -18,12 +18,20 @@ Horizon themes
 %build
 
 %install
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/previews
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/previews
 
-install -D -m 644 io.github.horizonlinux.HorizonLight $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
+install -p -m 644 io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js
+install -p -m 644 io.github.horizonlinux.HorizonLight/previews/preview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/previews/preview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonLight/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/previews/fullscreenpreview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonLight/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/metadata.json
 
-install -D -m 644 io.github.horizonlinux.HorizonDark $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
+install -p -m 644 io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js
+install -p -m 644 io.github.horizonlinux.HorizonDark/previews/preview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/previews/preview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonDark/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/previews/fullscreenpreview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/metadata.json
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
 install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
