@@ -8,6 +8,7 @@ var layout = {
             "config": {
                 "/": {
                     "ItemGeometries-1512x949": "",
+                    "ItemGeometries-1920x1080": "",
                     "ItemGeometriesHorizontal": "",
                     "formfactor": "0",
                     "immutability": "1",
@@ -33,7 +34,6 @@ var layout = {
                 {
                     "config": {
                         "/": {
-                            "PreloadWeight": "100",
                             "popupHeight": "511",
                             "popupWidth": "647"
                         },
@@ -50,6 +50,9 @@ var layout = {
                 },
                 {
                     "config": {
+                        "/General": {
+                            "launchers": "applications:systemsettings.desktop,applications:io.github.kolunmi.Bazaar.desktop,preferred://filemanager,preferred://browser"
+                        }
                     },
                     "plugin": "org.kde.plasma.icontasks"
                 },
