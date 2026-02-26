@@ -21,13 +21,9 @@ Horizon themes
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts
 
-install -p -m 644 io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts/org.kde.plasma.desktop-layout.js
-install -p -m 644 io.github.horizonlinux.HorizonLight/contents/defaults $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/defaults
-install -p -m 644 io.github.horizonlinux.HorizonLight/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/metadata.json
+install -D -m 644 io.github.horizonlinux.HorizonLight/contents $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
 
-install -p -m 644 io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js
-install -p -m 644 io.github.horizonlinux.HorizonDark/contents/defaults $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/defaults
-install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/metadata.json
+install -D -m 644 io.github.horizonlinux.HorizonDark/contents $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
 install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
@@ -38,6 +34,9 @@ install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROO
 %{_datadir}/glib-2.0/schemas/*.override
 
 %changelog
+* Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
+- Update theme for Plasma 6.6
+
 * Fri Jan 30 2026 Marcel Mrówka <micro.mail88@gmail.com>
 - Create GTK theme override
 
