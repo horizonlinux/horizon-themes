@@ -22,6 +22,13 @@ var layout = {
                 "/Wallpaper/org.kde.image/General": {
                     "Image": "file:///usr/share/wallpapers/ZlataPraha/",
                     "SlidePaths": "/usr/share/wallpapers/"
+                },
+                "/General": {
+                            "compactMode": "true",
+                            "favoritesPortedToKAstats": "true",
+                            "showActionButtonCaptions": "false",
+                            "switchCategoryOnHover": "true",
+                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                 }
             },
             "wallpaperPlugin": "org.kde.image"
