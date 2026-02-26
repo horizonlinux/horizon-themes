@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:       horizon-themes
-Version:    1.2
+Version:    1.3
 Release:    1%{?dist}
 Summary:    Horizon themes
 License:    GPLv3+
 
 URL:        https://github.com/horizonlinux/horizon-themes
-Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.2.tar.gz
+Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.3.tar.gz
 
 %description
 Horizon themes
@@ -30,8 +30,8 @@ install -p -m 644 io.github.horizonlinux.HorizonLight/contents/defaults $RPM_BUI
 install -p -m 644 io.github.horizonlinux.HorizonLight/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/metadata.json
 
 install -p -m 644 io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts/org.kde.plasma.desktop-layout.js
-install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/preview.png $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark//contents/previews/preview.png
-install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark//contents/previews/fullscreenpreview.jpg
+install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/preview.png $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/previews/preview.png
+install -p -m 644 io.github.horizonlinux.HorizonDark/contents/previews/fullscreenpreview.jpg $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/previews/fullscreenpreview.jpg
 install -p -m 644 io.github.horizonlinux.HorizonDark/contents/defaults $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/defaults
 install -p -m 644 io.github.horizonlinux.HorizonDark/metadata.json $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/metadata.json
 
@@ -44,6 +44,9 @@ install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROO
 %{_datadir}/glib-2.0/schemas/*.override
 
 %changelog
+* Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
+- Update translations
+
 * Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
 - Update theme for Plasma 6.6
 
