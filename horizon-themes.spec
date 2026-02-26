@@ -18,12 +18,12 @@ Horizon themes
 %build
 
 %install
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark/contents/layouts
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight/contents/layouts
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
 
-install -D -m 644 io.github.horizonlinux.HorizonLight/contents $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
+install -D -m 644 io.github.horizonlinux.HorizonLight $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonLight
 
-install -D -m 644 io.github.horizonlinux.HorizonDark/contents $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
+install -D -m 644 io.github.horizonlinux.HorizonDark $RPM_BUILD_ROOT%{_datadir}/plasma/look-and-feel/io.github.horizonlinux.HorizonDark
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
 install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas
