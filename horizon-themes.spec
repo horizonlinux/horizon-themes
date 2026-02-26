@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:       horizon-themes
-Version:    1.3
+Version:    1.4
 Release:    1%{?dist}
 Summary:    Horizon themes
 License:    GPLv3+
 
 URL:        https://github.com/horizonlinux/horizon-themes
-Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.3.tar.gz
+Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.4.tar.gz
 
 %description
 Horizon themes
@@ -44,6 +44,9 @@ install -p -m 644 10_org.gnome.desktop.interface.horizon.override $RPM_BUILD_ROO
 %{_datadir}/glib-2.0/schemas/*.override
 
 %changelog
+* Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
+- Make kickoff look nice
+
 * Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
 - Update translations
 
