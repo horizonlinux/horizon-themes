@@ -11,6 +11,9 @@
         "Id": "io.github.horizonlinux.HorizonLight",
         "License": "GPLv3+",
         "Name": "Horizon Light",
+        "Name[pl]": "Jasny Horizon",
+        "Description": "Default Light theme of Horizon",
+        "Description[pl]": "Domyślny jasny motyw Horizonu",
         "Website": "horizonlinux.github.io"
     },
     "Keywords": "Desktop;Workspace;Appearance;Look and Feel;",
