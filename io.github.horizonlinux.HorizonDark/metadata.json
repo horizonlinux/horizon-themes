@@ -9,9 +9,11 @@
         ],
         "Id": "io.github.horizonlinux.HorizonDark",
         "License": "GPLv3+",
-        "Name": "Horizon Dark",
-        "Name[pl]": "Ciemny Horizon",
+        "Name": "Horizon (Dark)",
+        "Name[cs]": "Horizon (Tmavý)",
+        "Name[pl]": "Horizon (Ciemny)",
         "Description": "Default Dark theme of Horizon",
+        "Description[cs]": "Výchozí tmavý motiv Horizonu",
         "Description[pl]": "Domyślny ciemny motyw Horizonu",
         "Website": "horizonlinux.github.io"
     },
