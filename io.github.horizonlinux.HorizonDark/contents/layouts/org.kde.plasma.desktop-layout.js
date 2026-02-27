@@ -9,6 +9,7 @@ var layout = {
                 "/": {
                     "ItemGeometries-1512x949": "",
                     "ItemGeometries-1920x1080": "",
+                    "ItemGeometries-1920x949": "",
                     "ItemGeometriesHorizontal": "",
                     "formfactor": "0",
                     "immutability": "1",
@@ -22,13 +23,6 @@ var layout = {
                 "/Wallpaper/org.kde.image/General": {
                     "Image": "file:///usr/share/wallpapers/WarsawBlueHour/",
                     "SlidePaths": "/usr/share/wallpapers/"
-                },
-                "/General": {
-                            "compactMode": "true",
-                            "favoritesPortedToKAstats": "true",
-                            "showActionButtonCaptions": "false",
-                            "switchCategoryOnHover": "true",
-                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                 }
             },
             "wallpaperPlugin": "org.kde.image"
@@ -44,8 +38,16 @@ var layout = {
                             "popupHeight": "511",
                             "popupWidth": "647"
                         },
+                        "/ConfigDialog": {
+                            "DialogHeight": "630",
+                            "DialogWidth": "810"
+                        },
                         "/General": {
-                            "favoritesPortedToKAstats": "true"
+                            "compactMode": "true",
+                            "favoritesPortedToKAstats": "true",
+                            "showActionButtonCaptions": "false",
+                            "switchCategoryOnHover": "true",
+                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },
                     "plugin": "org.kde.plasma.kickoff"
