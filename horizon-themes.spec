@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:       horizon-themes
-Version:    1.4
+Version:    1.5
 Release:    1%{?dist}
 Summary:    Horizon themes
 License:    GPLv3+
 
 URL:        https://github.com/horizonlinux/horizon-themes
-Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.4.tar.gz
+Source0:    https://github.com/horizonlinux/horizon-themes/archive/refs/tags/1.5.tar.gz
 
 %description
 Horizon themes
